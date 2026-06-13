@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LP Estofados - Limpeza e impermeabilização profissional de sofás, colchões e móveis estofados. Serviço de qualidade com garantia.">
+    <meta name="keywords" content="limpeza de sofá, impermeabilização, estofado, colchão, móveis">
+    <meta name="author" content="LP Estofados">
+    <meta name="theme-color" content="#16A34A">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LP Estofados - Limpeza Profissional de Móveis">
+    <meta property="og:description" content="Limpeza e impermeabilização profissional de sofás, colchões e móveis estofados com garantia de qualidade.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&h=630&fit=crop">
+    <meta property="og:url" content="https://lpestofados.com">
+    <meta property="og:site_name" content="LP Estofados">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LP Estofados - Limpeza Profissional de Móveis">
+    <meta name="twitter:description" content="Limpeza e impermeabilização profissional de sofás, colchões e móveis estofados.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&h=630&fit=crop">
+
+    <!-- Schema.org LocalBusiness JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "LocalBusiness",
+        "name": "LP Estofados",
+        "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=600&fit=crop",
+        "description": "Limpeza e impermeabilização profissional de móveis estofados",
+        "telephone": "+5511999999999",
+        "url": "https://lpestofados.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BR"
+        },
+        "priceRange": "R$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "127"
+        }
+    }
+    </script>
+
+    <title>LP Estofados - Limpeza Profissional de Móveis Estofados</title>
+
+    <!-- Font Awesome 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets UNIFICADOS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        :root {
+            --color-primary: #16A34A;
+            --color-primary-dark: #15803D;
+            --color-primary-light: #22C55E;
+            --color-dark: #0F172A;
+            --color-dark-2: #1E293B;
+            --color-gray: #F8FAFC;
+            --color-gray-2: #F1F5F9;
+            --color-gray-3: #E2E8F0;
+            --color-text: #334155;
+            --color-text-light: #64748B;
+            --color-white: #FFFFFF;
+            --font-main: 'Poppins', sans-serif;
+            --header-h: 76px;
+            --container-max: 1240px;
+            --container-pad: 1.5rem;
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --radius-full: 9999px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
+            --shadow-lg: 0 12px 40px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,0.05);
+            --shadow-green: 0 8px 30px rgba(22,163,74,0.25);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="navbar">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <i class="fas fa-couch"></i>
+                <span>LP <strong>Estofados</strong></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#about" class="nav__link">Quem Somos</a></li>
+                <li><a href="#benefits" class="nav__link">Benefícios</a></li>
+                <li><a href="#services" class="nav__link">Serviços</a></li>
+                <li><a href="#process" class="nav__link">Como Funciona</a></li>
+                <li><a href="#stats" class="nav__link">Estatísticas</a></li>
+                <li><a href="#before-after" class="nav__link">Antes e Depois</a></li>
+                <li><a href="#testimonials" class="nav__link">Depoimentos</a></li>
+                <li><a href="#faq" class="nav__link">FAQ</a></li>
+                <li><a href="#contact" class="nav__link">Contato</a></li>
+            </ul>
+
+            <a href="https://wa.me/5511999999999" class="btn btn--primary btn-cta-header" target="_blank">
+                <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__bg"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+            <div class="hero__text">
+                <span class="hero__badge">
+                    <span class="badge-dot"></span>
+                    Profissionais Certificados
+                </span>
+                <h1 class="hero__title">Transforme seu <span class="hero__title--highlight">Sofá</span></h1>
+                <p class="hero__subtitle">Limpeza e impermeabilização profissional de móveis estofados com tecnologia avançada e produtos eco-friendly</p>
+                <div class="hero__actions">
+                    <a href="https://wa.me/5511999999999" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+                    </a>
+                </div>
+                <div class="hero__stats">
+                    <div class="hero-stat">
+                        <strong>+2.500</strong>
+                        <span>Clientes</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <strong>+10</strong>
+                        <span>Anos</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <strong>98%</strong>
+                        <span>Satisfação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section class="about animate-on-scroll" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Sobre Nós</span>
+                <h2 class="section-title">Quem Somos</h2>
+            </div>
+            <div class="about__grid">
+                <div class="about__content">
+                    <h3>LP Estofados - Excelência em Limpeza</h3>
+                    <p class="about__text">Com mais de 10 anos no mercado, a LP Estofados é especializada em limpeza profissional e impermeabilização de móveis estofados. Nossa missão é trazer novas vidas aos seus sofás, colchões e poltronas com a mais avançada tecnologia do mercado.</p>
+                    <p class="about__text">Utilizamos produtos eco-friendly e equipamentos de última geração para garantir resultados extraordinários sem danificar seus móveis.</p>
+                    <div class="about__values">
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-check"></i></div>
+                            <div><strong>Equipe treinada e certificada</strong></div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-check"></i></div>
+                            <div><strong>Produtos de alta qualidade</strong></div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-check"></i></div>
+                            <div><strong>Garantia de satisfação 100%</strong></div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-check"></i></div>
+                            <div><strong>Atendimento em toda a região</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__image-wrap">
+                    <img class="about__img" src="assets/StockCake-Área_de_Estar_Moderna-619771-medium.jpg" alt="Time LP Estofados" loading="lazy">
+                    <div class="about__badge-exp">
+                        <strong>10+</strong>
+                        <span>Anos de<br>Experiência</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Vantagens</span>
+                <h2 class="section-title">Benefícios de Nossos Serviços</h2>
+            </div>
+            <div class="benefits__grid">
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-card__icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Proteção Duradoura</h3>
+                    <p>Impermeabilização que protege contra manchas e umidade por até 12 meses</p>
+                </div>
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-card__icon"><i class="fas fa-broom"></i></div>
+                    <h3>Limpeza Profunda</h3>
+                    <p>Remove 99% das bactérias e ácaros das fibras do tecido</p>
+                </div>
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-card__icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Produtos Eco-friendly</h3>
+                    <p>Utilizamos apenas produtos seguros para sua família e o meio ambiente</p>
+                </div>
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-card__icon"><i class="fas fa-hourglass-half"></i></div>
+                    <h3>Secagem Rápida</h3>
+                    <p>Tecnologia de secagem que deixa seus móveis prontos em poucas horas</p>
+                </div>
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-card__icon"><i class="fas fa-palette"></i></div>
+                    <h3>Cores Realçadas</h3>
+                    <p>Recupera o brilho e a vivacidade das cores originais do seu móvel</p>
+                </div>
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-card__icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>Garantia Total</h3>
+                    <p>Satisfação garantida ou devolvemos 100% do investimento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">O que fazemos</span>
+                <h2 class="section-title">Nossos Serviços</h2>
+            </div>
+            <div class="services__grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-card__icon"><i class="fas fa-couch"></i></div>
+                    <h3>Limpeza de Sofás</h3>
+                    <p>Limpeza profunda de sofás com remoção de manchas, ácaros e bactérias. Restauramos a aparência original do seu móvel.</p>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="service-card__link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-card__icon"><i class="fas fa-bed"></i></div>
+                    <h3>Limpeza de Colchões</h3>
+                    <p>Higienização completa de colchões eliminando ácaros, fungos e bactérias para um sono mais saudável.</p>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="service-card__link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-card__icon"><i class="fas fa-chair"></i></div>
+                    <h3>Limpeza de Poltronas</h3>
+                    <p>Revitalizamos poltronas e cadeiras estofadas com técnicas especializadas em tecidos delicados.</p>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="service-card__link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-card__icon"><i class="fas fa-square"></i></div>
+                    <h3>Limpeza de Cadeiras</h3>
+                    <p>Limpeza specializada para cadeiras de escritório, cozinha e ambientes corporativos.</p>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="service-card__link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-card__icon"><i class="fas fa-car"></i></div>
+                    <h3>Limpeza de Bancos Automotivos</h3>
+                    <p>Higienização profissional de estofados automotivos com técnicas que preservam o acabamento.</p>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="service-card__link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-card__icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Higienização de cama de Pet</h3>
+                    <p>Proteção contra manchas e umidade com cobertura de até 12 meses de garantia.</p>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="service-card__link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="how-it-works" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Passo a Passo</span>
+                <h2 class="section-title">Como Funciona</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline__item animate-on-scroll">
+                    <div class="timeline__step">1</div>
+                    <div class="timeline__content">
+                        <div class="timeline__icon"><i class="fas fa-phone-alt"></i></div>
+                        <h3>Contato</h3>
+                        <p>Fale conosco pelo WhatsApp</p>
+                    </div>
+                </div>
+                <div class="timeline__connector"></div>
+                <div class="timeline__item animate-on-scroll">
+                    <div class="timeline__step">2</div>
+                    <div class="timeline__content">
+                        <div class="timeline__icon"><i class="fas fa-clipboard-list"></i></div>
+                        <h3>Avaliação</h3>
+                        <p>Análise do seu móvel</p>
+                    </div>
+                </div>
+                <div class="timeline__connector"></div>
+                <div class="timeline__item animate-on-scroll">
+                    <div class="timeline__step">3</div>
+                    <div class="timeline__content">
+                        <div class="timeline__icon"><i class="fas fa-broom"></i></div>
+                        <h3>Limpeza</h3>
+                        <p>Higienização profunda</p>
+                    </div>
+                </div>
+                <div class="timeline__connector"></div>
+                <div class="timeline__item animate-on-scroll">
+                    <div class="timeline__step">4</div>
+                    <div class="timeline__content">
+                        <div class="timeline__icon"><i class="fas fa-tint"></i></div>
+                        <h3>Proteção</h3>
+                        <p>Impermeabilização</p>
+                    </div>
+                </div>
+                <div class="timeline__connector"></div>
+                <div class="timeline__item animate-on-scroll">
+                    <div class="timeline__step">5</div>
+                    <div class="timeline__content">
+                        <div class="timeline__icon"><i class="fas fa-smile"></i></div>
+                        <h3>Finalização</h3>
+                        <p>Móvel renovado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-target="2500">0</div>
+                    <div class="stat-label">Clientes Satisfeitos</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-target="127">0</div>
+                    <div class="stat-label">Avaliações 5 Estrelas</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">Taxa de Recomendação %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Antes e Depois + Galeria -->
+    <section class="before-after" id="before-after">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Resultados Reais</span>
+                <h2 class="section-title">Antes e Depois</h2>
+            </div>
+
+            <!-- Comparison Slider CORRIGIDO -->
+            <div class="comparison-slider" id="comparisonSlider">
+                <div class="comparison-slider__before">
+                    <img src="assets/StockCake-Transformação_da_Limpeza_de_Sofá-3727974-medium.jpg" alt="Sofá antes da higienização">
+                    <div class="comparison-label comparison-label--before">ANTES</div>
+                </div>
+                <div class="comparison-slider__after">
+                    <img src="assets/StockCake-Transformação_da_Limpeza_de_Sofá-3727974-medium.jpg" alt="Sofá depois da higienização">
+                    <div class="comparison-label comparison-label--after">DEPOIS</div>
+                </div>
+                <div class="comparison-slider__handle">
+                    <div class="handle-circle">
+                        <i class="fas fa-arrows-alt-h"></i>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="gallery-title">Galeria de Transformações</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="assets/minh-pham-OtXADkUh3-I-unsplash.jpg" alt="Higienização de Sofá com equipamento profissional">
+                        <div class="gallery-item__overlay"><span>Higienização de Sofá</span></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="assets/StockCake-Processo_de_Limpeza_de_Estofados-1356231-medium.jpg" alt="Limpeza profunda de estofado">
+                        <div class="gallery-item__overlay"><span>Limpeza Profunda</span></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="assets/StockCake-Limpeza_Profissional_de_Sofá-4092512-medium.jpg" alt="Aplicação de produtos de limpeza">
+                        <div class="gallery-item__overlay"><span>Aplicação de Produtos</span></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="assets/StockCake-Processo_de_Limpeza_de_Sofá-742088-medium.jpg" alt="Remoção de manchas de sofá">
+                        <div class="gallery-item__overlay"><span>Remoção de Manchas</span></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="assets/StockCake-Aspirando_Tapete_Oriental-974670-medium.jpg" alt="Equipe de higienização trabalhando">
+                        <div class="gallery-item__overlay"><span>Equipe Especializada</span></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="assets/StockCake-Ação_de_Limpeza_de_Interiores-314924-medium.jpg" alt="Resultado da limpeza de estofado">
+                        <div class="gallery-item__overlay"><span>Resultado Impecável</span></div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">O que dizem</span>
+                <h2 class="section-title">Depoimentos de Clientes</h2>
+            </div>
+
+            <div class="testimonials__carousel" id="testimonialsCarousel">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-card__text">"Meu sofá estava horrível e a LP Estofados transformou completamente! A limpeza ficou impecável e o produto de proteção está funcionando maravilhosamente bem."</p>
+                        <div class="testimonial-card__author">
+                            <div class="author-info">
+                                <strong>Maria Silva</strong>
+                                <span>São Paulo - SP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-card__text">"Profissionais muito atenciosos e competentes. Chegaram no horário, realizaram o trabalho com perfeição. Super recomendo!"</p>
+                        <div class="testimonial-card__author">
+                            <div class="author-info">
+                                <strong>João Santos</strong>
+                                <span>Rio de Janeiro - RJ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-card__text">"O melhor serviço que já contratei! Meu colchão ficou como novo. Já recomendei para vários amigos."</p>
+                        <div class="testimonial-card__author">
+                            <div class="author-info">
+                                <strong>Ana Costa</strong>
+                                <span>Belo Horizonte - MG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-card__text">"Atendimento impecável! Equipe muito profissional. O resultado superou minhas expectativas."</p>
+                        <div class="testimonial-card__author">
+                            <div class="author-info">
+                                <strong>Pedro Oliveira</strong>
+                                <span>Curitiba - PR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" id="carouselPrev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn next" id="carouselNext"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Dúvidas</span>
+                <h2 class="section-title">Perguntas Frequentes</h2>
+            </div>
+            <div class="faq__list">
+                <div class="faq__item animate-on-scroll">
+                    <button class="faq__question" aria-expanded="false">
+                        Qual é o tempo de secagem após a limpeza?
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer">
+                        <p>O tempo de secagem varia entre 4 a 8 horas, dependendo do tipo de tecido e condições climáticas. Utilizamos equipamento de secagem profissional para acelerar o processo.</p>
+                    </div>
+                </div>
+                <div class="faq__item animate-on-scroll">
+                    <button class="faq__question" aria-expanded="false">
+                        Posso usar meu sofá logo após a limpeza?
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Recomendamos aguardar pelo menos 4 horas antes de usar o móvel. Isso permite que o tecido seque completamente e o protetor fixe adequadamente.</p>
+                    </div>
+                </div>
+                <div class="faq__item animate-on-scroll">
+                    <button class="faq__question" aria-expanded="false">
+                        A limpeza danifica o tecido ou a cor do móvel?
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Não! Utilizamos produtos profissionais e seguros que respeitam as fibras do tecido. Nossas técnicas na verdade revitalizam as cores, deixando o móvel com aparência de novo.</p>
+                    </div>
+                </div>
+                <div class="faq__item animate-on-scroll">
+                    <button class="faq__question" aria-expanded="false">
+                        Quanto tempo dura a proteção de impermeabilização?
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer">
+                        <p>A proteção de impermeabilização oferece garantia de até 12 meses contra manchas e umidade. A durabilidade depende do uso e da frequência de limpeza.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="cta-banner__bg"></div>
+        <div class="container">
+            <div class="cta-banner__content">
+                <h2>Transforme Seu Móvel Hoje Mesmo</h2>
+                <p>Entre em contato conosco para um orçamento sem compromisso. Nossa equipe está pronta para ajudar!</p>
+                <a href="https://wa.me/5541999999999" class="btn btn--white btn--xl" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> Solicitar Orçamento Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Fale Conosco</span>
+                <h2 class="section-title">Entre em Contato</h2>
+            </div>
+            <div class="contact__grid">
+                <div class="contact__info animate-on-scroll fade-left">
+                    <h3>Vamos conversar?</h3>
+                    <p>Estamos prontos para atender você e tirar todas as suas dúvidas sobre nossos serviços.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-item__icon"><i class="fas fa-phone-alt"></i></div>
+                            <div><strong>Telefone</strong><br><a href="tel:+5541999999999">(41) 99999-9999</a></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon"><i class="fas fa-envelope"></i></div>
+                            <div><strong>Email</strong><br><a href="mailto:contato@lpestofados.com">contato@lpestofados.com</a></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div><strong>Localização</strong><br><span>Curitiba, PR - Brasil</span></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon"><i class="fas fa-clock"></i></div>
+                            <div><strong>Horário</strong><br><span>Seg-Sex: 08h-18h | Sáb: 08h-13h</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-card animate-on-scroll fade-right">
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Nome completo *</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Telefone *</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Serviço desejado</label>
+                            <select id="service">
+                                <option value="">Selecione...</option>
+                                <option>Limpeza de Sofás</option>
+                                <option>Limpeza de Colchões</option>
+                                <option>Limpeza de Poltronas</option>
+                                <option>Impermeabilização</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Mensagem</label>
+                            <textarea id="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Enviar Mensagem</button>
+                        <p class="form-disclaimer">* Respondemos em até 30 minutos</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer-logo">
+                    <div class="logo-name">LP <strong>Estofados</strong></div>
+                    <div class="logo-tagline">Limpeza Profissional</div>
+                    <p class="footer__desc">Limpeza e impermeabilização profissional de móveis estofados com qualidade garantida.</p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Quem Somos</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#services">Limpeza de Sofás</a></li>
+                        <li><a href="#services">Limpeza de Colchões</a></li>
+                        <li><a href="#services">Impermeabilização</a></li>
+                        <li><a href="#services">Limpeza Automotiva</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+5511999999999">(11) 99999-9999</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:contato@lpestofados.com">contato@lpestofados.com</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511999999999">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 LP Estofados. Todos os direitos reservados.</p>                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp fa-2x"></i>
+        <span class="whatsapp-float__label">Orçamento</span>
+        <span class="whatsapp-float__pulse"></span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts UNIFICADOS -->
+    <script src="script.js"></script>
+</body>
+</html>
