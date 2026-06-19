@@ -51,20 +51,6 @@ class MobileMenu {
     }
 }
 
-// Inicialização
-document.addEventListener('DOMContentLoaded', () => {
-    new MobileMenu();
-    new DynamicHeader();
-    new CountUpAnimation();
-    new BackToTop();
-    new SmoothScroll();
-    new BeforeAfterSlider();
-    new FAQ();
-    new Carousel();
-    new FormHandler();
-    new ScrollReveal();  // <--- ADICIONE ESTA LINHA
-});
-
 // Header dinâmico
 class DynamicHeader {
     constructor() {
@@ -74,7 +60,7 @@ class DynamicHeader {
     }
     
     onScroll() {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 50) {
             this.header.classList.add('scrolled');
         } else {
             this.header.classList.remove('scrolled');
@@ -372,6 +358,7 @@ class FormHandler {
         this.form.reset();
     }
 }
+
 // ===== SCROLL REVEAL - Faz os elementos aparecerem ao rolar =====
 class ScrollReveal {
     constructor() {
@@ -401,9 +388,7 @@ class ScrollReveal {
     }
 }
 
-
-
-// Inicialização
+// ===== INICIALIZAÇÃO - CORRIGIDA =====
 document.addEventListener('DOMContentLoaded', () => {
     new MobileMenu();
     new DynamicHeader();
@@ -414,4 +399,5 @@ document.addEventListener('DOMContentLoaded', () => {
     new FAQ();
     new Carousel();
     new FormHandler();
+    new ScrollReveal();  // ✅ ADICIONADO
 });
