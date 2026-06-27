@@ -144,7 +144,7 @@ body {
 }
 
 .logo-svg {
-    height: 98px;
+    height: 75px;
     width: auto;
     display: block;
     transition: var(--transition);
@@ -603,18 +603,39 @@ body {
 }
 
 .benefits__grid {
+
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2rem;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
 }
 
 .benefit-card {
+
     background: var(--color-white);
+
     border-radius: var(--radius-lg);
+
     padding: 1.75rem;
+
     box-shadow: var(--shadow-sm);
+
     border: 1px solid var(--color-gray-3);
+
     transition: var(--transition);
+
+    min-height: 290px;
+
+    display: flex;
+
+    flex-direction: column;
+
 }
 
 .benefit-card:hover {
@@ -913,7 +934,7 @@ body {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
@@ -1515,21 +1536,33 @@ body {
 
 /* ===== RESPONSIVO GERAL ===== */
 @media (max-width: 1024px) {
-    .services__grid {
-        grid-template-columns: repeat(2, 1fr);
+
+    .benefits__grid{
+        grid-template-columns:repeat(2,1fr);
     }
-    
-    .gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
+
+    .services__grid{
+        grid-template-columns:repeat(2,1fr);
     }
-    
-    .footer__grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+
+    .gallery-grid{
+        grid-template-columns:repeat(3,1fr);
     }
+
+    .footer__grid{
+        grid-template-columns:1fr 1fr;
+        gap:2rem;
+    }
+
 }
 
 @media (max-width: 768px) {
+
+     .benefits__grid{
+        grid-template-columns:1fr;
+    }
+
+
     .services__grid {
         grid-template-columns: 1fr;
     }
@@ -1606,4 +1639,222 @@ body {
     .comparison-slider {
         aspect-ratio: 4 / 3;
     }
+}
+
+/*==================================================
+                SAÚDE
+==================================================*/
+
+.health{
+
+    padding:90px 0;
+
+    background:linear-gradient(135deg,#182332,#192334);
+
+}
+
+.health .section-title{
+
+    color:#FFF;
+
+}
+
+.health-subtitle{
+
+    max-width:850px;
+
+    margin:auto;
+
+    color:rgba(255,255,255,.82);
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+.health-grid{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.health-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    transition:.35s;
+
+    text-align:center;
+
+    backdrop-filter:blur(8px);
+
+}
+
+.health-card:hover{
+
+    transform:translateY(-8px);
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.health-icon{
+
+    width:75px;
+
+    height:75px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#B4A07E;
+
+    color:#FFF;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+.health-card h3{
+
+    color:#FFF;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+.health-card p{
+
+    color:rgba(255,255,255,.75);
+
+    line-height:1.8;
+
+}
+
+.health-info{
+
+    margin-top:70px;
+
+    background:#FFF;
+
+    border-radius:25px;
+
+    padding:45px;
+
+}
+
+.health-info h3{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+    color:#192334;
+
+}
+
+.health-info p{
+
+    line-height:1.9;
+
+    color:#555;
+
+    margin-bottom:30px;
+
+}
+
+.health-reference{
+
+    background:#F8F8F8;
+
+    padding:25px;
+
+    border-left:5px solid #192334;
+
+    border-radius:10px;
+
+}
+
+.health-reference strong{
+
+    display:block;
+
+    margin-bottom:15px;
+
+}
+
+.health-reference ul{
+
+    padding-left:20px;
+
+}
+
+.health-reference li{
+
+    margin-bottom:8px;
+
+}
+
+.health-cta{
+
+    margin-top:60px;
+
+    text-align:center;
+
+}
+
+@media(max-width:1000px){
+
+.health-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.health-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.health-info{
+
+padding:30px;
+
+}
+
+.health-info h3{
+
+font-size:26px;
+
+}
+
 }
